@@ -15,7 +15,9 @@ use App\PasswordReset;
 Route::get('/', function () {
     $d = PasswordReset::all();
 
-echo count($d); die;
+ 	if(count($d)) {
+ 		echo 'here';
+	} die;
     return view('welcome');
 });
 
