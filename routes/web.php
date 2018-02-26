@@ -14,6 +14,7 @@
 Route::get('/', function () {
 $array = array();
 //var_dump($array);
+echo phpinfo();
 echo count($array); die;
 
     return view('welcome');
