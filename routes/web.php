@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\User;
+use App\PasswordReset;
 
 Route::get('/', function () {
-    $d = User::all();
+    $d = PasswordReset::all();
 
 echo count($d); die;
     return view('welcome');
