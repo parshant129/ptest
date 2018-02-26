@@ -7,7 +7,7 @@ jobs:
   build:
     working_directory: ~/ptest
     docker:
-      - image: ucreateit/php7.1
+      - image: ucreateit/php7.1:firsttry
       - image: postgres:9.6.2
         environment:
           POSTGRES_USER: ubuntu
