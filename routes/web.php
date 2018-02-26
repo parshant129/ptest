@@ -10,12 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\User;
 
 Route::get('/', function () {
-$array = array();
-//var_dump($array);
-echo phpinfo();
-echo count($array); die;
+    $d = User::all();
 
+echo count($d); die;
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
