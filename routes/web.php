@@ -12,12 +12,7 @@
 */
 
 Route::get('/', function () {
-$array = array([
-"a" => 1,
-"b" => 2
-	],["a" => 1,
-"b" => 2],["a" => 1,
-"b" => 2]);
+$array = array();
 //var_dump($array);
 echo count($array); die;
 
